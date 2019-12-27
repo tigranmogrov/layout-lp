@@ -1,0 +1,102 @@
+@import "~normalize-scss/sass/normalize/import-now";
+/* reset */
+
+/* set border-box for all */
+*,*:before,*:after { box-sizing: border-box;-webkit-text-size-adjust: none; }
+/* cross-browser styles for root */
+:root {
+	-webkit-text-size-adjust: none;
+	-ms-text-size-adjust: 100%;
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+/* appearance: none */
+[type=reset],[type=submit],button,
+input:not( [type=checkbox] ),input:not( [type=radio] )
+{ -webkit-appearance: none; }
+/* outline: none */
+input,input:focus,
+option,option:focus,
+select,select:focus,
+textarea:focus,textarea,
+button,button:focus
+{ outline: none; }
+/* bind height from :root */
+:root,body { height: 100%; }
+/* reset address */
+address { font-style: normal; }
+/* reset lists margin */
+ul,dl,dd,dt { margin: 0; }
+/* reset ul padding */
+ul { padding: 0; }
+/* reset list-style */
+li { list-style: none; }
+/* reset text-decoration */
+a[href] { text-decoration: none; }
+a[href]:hover { text-decoration: none; }
+/* set cursor pointer for accessibility */
+a[href],button { cursor: pointer; }
+/* reset heading margin */
+h1,h2,h3,h4,h5,h6,p { margin: 0; }
+/* set default body styles */
+body {
+	min-height:100%;
+	position: relative;
+	background-color: #fff;
+	-webkit-text-size-adjust: 100%;
+	font-family: $mainFonts;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 26px;
+	color: $dark-gray;
+	@include media('<md') {
+		font-size: 16px;
+		line-height: 20px;
+	}
+	@include media('<sm') {
+		font-size: 14px;
+		line-height: 18px;
+	}
+}
+/* br fix */
+@include media('>=992px') {
+  .mb{ display: none !important; }
+  .pc{ display: block !important; }
+}
+@include media('<=991px') {
+  .mb{ display: block !important; }
+  .pc{ display: none !important; }
+}
+/* default class */
+.wrapper {
+  display: flex;
+  flex-flow: column nowrap;
+
+  max-width: 100%;
+  min-height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+.container {
+  display: block;
+  width: auto;
+  max-width: $container-width;
+  margin: 0 auto;
+  padding: 0 $container-p;
+  box-sizing: content-box;
+	position: relative;
+	z-index: 33;
+  &_fluid {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  @include clearfix();
+  @include media('<=#{$container-width}') {
+    box-sizing: border-box;
+  }
+}
+
+img{
+	display:block;
+	width: 100%;
+}

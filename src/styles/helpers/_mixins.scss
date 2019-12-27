@@ -1,0 +1,18 @@
+/* mixins */
+
+@mixin clearfix {
+	&:before,
+	&:after {
+		content: '';
+		display: table;
+	}
+	&:after { clear: both; }
+}
+
+
+@mixin grid($cols, $offset) {
+	$Q: ( $cols - 1 ) / $cols;
+	$Off: $offset * $Q;
+	$width: 100% / $cols;
+	width: calc(#{$width} - #{$Off});
+}

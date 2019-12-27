@@ -1,0 +1,77 @@
+/* btn */
+
+.btn-accent {
+	display: block;
+	max-width: 280px;
+	width: 100%;
+	padding: 21px 10px;
+	margin-top: 70px;
+	font-weight: 800;
+	font-size: 24px;
+	line-height: 28px;
+	color: $dark-gray;
+	border: none;
+	background-color: $accent;
+	border-radius: 40px;
+	overflow: hidden;
+	text-align: center;
+	word-break: break-word;
+	transition: 	background-color .4s, box-shadow .4s,color .4s;
+	margin-left: auto;
+	margin-right: auto;
+	@at-root :root.hover &:hover {
+		background-color: darken($accent, 10);
+		box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.75);
+		color: $white;
+	}
+	@include media('<md') {
+		max-width: 240px;
+		padding: 16px 10px;
+		font-size: 20px;
+		margin-top: 60px;
+	}
+	@include media('<sm') {
+		max-width: 200px;
+		padding: 11px 10px;
+		font-size: 18px;
+		margin-top: 30px;
+	}
+	//&.left {
+	//	margin-left: initial;
+	//	margin-right: initial;
+	//}
+	//&.right {
+	//	margin-left: auto;
+	//	margin-right: initial;
+	//}
+}
+
+.secondary-btn {
+	display: block;
+	max-width: 160px;
+	width: 100%;
+	padding: 11px 5px;
+	font-size: 12px;
+	line-height: 14px;
+	color: $white;
+	border: none;
+	background-color: #616161;
+	border-radius: 40px;
+	overflow: hidden;
+	text-align: center;
+	word-break: break-word;
+	transition: .3s;
+	@include media('<sm') {
+		margin-top: 20px;
+	}
+
+	@at-root :root.hover &:hover {
+		background-color:$accent;
+		box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.75);
+		color: $dark-gray;
+		font-weight: 800;
+	}
+
+
+}
+

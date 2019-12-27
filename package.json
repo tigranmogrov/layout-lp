@@ -1,0 +1,73 @@
+{
+  "name": "bundler",
+  "version": "2.0.8",
+  "scripts": {
+    "start": "webpack-dev-server --mode development",
+    "start:prod": "webpack-dev-server --mode production",
+    "build": "webpack --mode development",
+    "build:sourcemap": "webpack --mode development --source-map",
+    "build:prod": "webpack --mode production",
+    "build:prod:sourcemap": "webpack --mode production --source-map",
+    "watch": "webpack --mode development --watch",
+    "watch:sourcemap": "webpack --mode development --watch --source-map",
+    "watch:prod": "webpack --mode production --watch",
+    "watch:prod:sourcemap": "webpack --mode production --watch --source-map",
+    "lint": "eslint .",
+    "lint-fix": "eslint . --fix",
+    "ip": "node ./webpack.config.js --ip"
+  },
+  "browserslist": [
+    "last 3 version",
+    "> 1%",
+    "IE 10"
+  ],
+  "sideEffects": [
+    "*.js",
+    "*.css",
+    "*.scss",
+    "*.html"
+  ],
+  "author": "Han Parker",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.2.2",
+    "@babel/plugin-proposal-class-properties": "^7.4.4",
+    "@babel/plugin-proposal-decorators": "^7.4.4",
+    "@babel/plugin-syntax-dynamic-import": "^7.0.0",
+    "@babel/polyfill": "^7.2.5",
+    "@babel/preset-env": "^7.0.0",
+    "autoprefixer": "^9.1.3",
+    "babel-eslint": "^10.0.1",
+    "babel-loader": "^8.0.2",
+    "clean-webpack-plugin": "^0.1.19",
+    "copy-webpack-plugin": "^4.5.2",
+    "css-hot-loader": "^1.4.2",
+    "css-loader": "^1.0.0",
+    "cssnano": "^4.0.5",
+    "eslint": "^5.15.3",
+    "file-loader": "^2.0.0",
+    "fs": "0.0.1-security",
+    "html-webpack-plugin": "^3.2.0",
+    "mini-css-extract-plugin": "^0.4.2",
+    "node-sass": "^4.9.3",
+    "path": "^0.12.7",
+    "postcss-import": "^12.0.0",
+    "postcss-loader": "^3.0.0",
+    "raw-loader": "^0.5.1",
+    "sass-loader": "^7.1.0",
+    "script-ext-html-webpack-plugin": "^2.1.3",
+    "uglifyjs-webpack-plugin": "^2.0.1",
+    "url-loader": "^1.1.2",
+    "webpack": "^4.16.5",
+    "webpack-bundle-analyzer": "^3.0.3",
+    "webpack-cli": "^3.1.0",
+    "webpack-dev-server": "^3.1.5"
+  },
+  "dependencies": {
+    "body-scroll-lock": "^2.6.4",
+    "include-media": "^1.4.9",
+    "normalize-scss": "^7.0.1",
+    "rxjs": "^6.5.2",
+    "swiper": "^5.2.1"
+  }
+}

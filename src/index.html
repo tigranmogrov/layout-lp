@@ -1,0 +1,409 @@
+<!doctype html>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8">
+	<meta name="description" content="<%= htmlWebpackPlugin.options.description %>">
+	<meta name="keywords" content="<%= htmlWebpackPlugin.options.keywords %>">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="viewport"
+				content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<!-- og format -->
+	<meta property="og:title" content="">
+	<!-- bar color -->
+	<meta name="theme-color" content="#fff">
+	<meta name="msapplication-navbutton-color" content="#fff">
+	<meta name="apple-mobile-web-app-status-bar-style" content="#fff">
+	<!-- favicon -->
+	<!--<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">-->
+	<!--<link rel="apple-touch-icon" href="images/apple-touch-icon152.png" sizes="152x152">-->
+	<title>Home</title>
+</head>
+<body>
+<div class="wrapper" id="wrapper">
+	<%= _.template(require('./parts/header.html'))() %>
+	<div class="app" id="app">
+
+		<section class="top-slider mask" style="background-image: url(/images/img-header.jpg)">
+			<div class="container">
+			<div class="top-slider__wrap">
+				<div class="swiper-container" id="top-slider">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide">
+
+							<div class="top-slider__inner">
+
+								<h2 class="primary-title">Welcome to our site</h2>
+								<h3 class="subtitle text-white secondary-top-offset">Lorem ipsum dolor sit amet, consectetur adipiscing
+									elit, sed do
+									eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+									exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h3>
+								<button class="btn-accent">Contact Us</button>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="top-slider__inner">
+								<h2 class="primary-title">Welcome to our site</h2>
+								<h3 class="subtitle text-white secondary-top-offset">Lorem ipsum dolor sit amet, consectetur adipiscing
+									elit, sed do
+									eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+									exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h3>
+								<button class="btn-accent">Contact Us</button>
+							</div>
+						</div>
+
+						<div class="swiper-slide">
+							<div class="top-slider__inner">
+								<h2 class="primary-title">Welcome to our site</h2>
+								<h3 class="subtitle text-white secondary-top-offset">Lorem ipsum dolor sit amet, consectetur adipiscing
+									elit, sed do
+									eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+									exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h3>
+								<button class="btn-accent">Contact Us</button>
+							</div>
+						</div>
+					</div>
+
+					<div class="swiper-pagination"></div>
+				</div>
+				<div class="swiper-button-next"></div>
+				<div class="swiper-button-prev"></div>
+			</div>
+			</div>
+		</section>
+	</div>
+
+	<section class="about inner-offset" id="about">
+
+		<div class="container">
+			<h2 class="secondary-title text-center">About Us</h2>
+			<div class="about__inner primary-top-offset">
+				<div class="about__image">
+					<img src="/images/about-image.jpg" alt="image description">
+				</div>
+				<div class="about__desc-wrap">
+					<p>
+						Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem
+						aperiam eaque ipsa, quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt, explicabo.
+						Nemo enim ipsam voluptatem, quia voluptas sit, aspernatur aut odit aut fugit, sed quia consequuntur magni
+						dolores eos, qui ratione voluptatem sequi nesciunt, neque porro quisquam est, qui dolorem ipsum, quia dolor
+						sit amet consectetur adipisci[ng] velit, sed quia non numquam [do] eius modi tempora inci[di]dunt, ut labore
+						et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam
+						corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure
+						reprehenderit, qui in ea voluptate velit esse, quam nihil molestiae consequatur, vel illum, qui dolorem eum
+						fugiat, quo voluptas nulla pariatur?
+					</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="services mask inner-offset" id="services" style="background-image: url(/images/img-services.jpg)">
+		<div class="container">
+			<h2 class="secondary-title white text-center">Our Services</h2>
+			<p class="text-center text-white secondary-top-offset">
+				Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem
+				aperiam eaque ipsa, quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt, explicabo.
+			</p>
+			<ul class="services__list text-white text-center primary-top-offset ">
+				<li class="services__item">
+					<div class="services__icon-wrap">
+						<span class="services__icon">
+							<img src="/images/services_icon_01.svg" alt="image description">
+						</span>
+					</div>
+					<div class="services__item-desc">
+						<h3 class="secondary-top-offset third-title">Title1</h3>
+						<p class="third-top-offset">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+							eiusmod
+							tempor incididunt ut labore et dolore magna aliqua. </p>
+					</div>
+				</li>
+				<li class="services__item">
+					<div class="services__icon-wrap">
+						<span class="services__icon">
+							<img src="/images/services_icon_02.svg" alt="image description">
+						</span>
+					</div>
+					<div class="services__item-desc">
+						<h3 class="secondary-top-offset third-title">Title1</h3>
+						<p class="third-top-offset">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+							eiusmod
+							tempor incididunt ut labore et dolore magna aliqua. </p>
+					</div>
+				</li>
+				<li class="services__item">
+					<div class="services__icon-wrap">
+						<span class="services__icon">
+							<img src="/images/services_icon_03.svg" alt="image description">
+						</span>
+					</div>
+					<div class="services__item-desc">
+						<h3 class="secondary-top-offset third-title">Title1</h3>
+						<p class="third-top-offset">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+							eiusmod
+							tempor incididunt ut labore et dolore magna aliqua. </p>
+					</div>
+				</li>
+				<li class="services__item">
+					<div class="services__icon-wrap">
+						<span class="services__icon">
+							<img src="/images/services_icon_04.svg" alt="image description">
+						</span>
+					</div>
+					<div class="services__item-desc">
+						<h3 class="secondary-top-offset third-title">Title1</h3>
+						<p class="third-top-offset">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+							eiusmod
+							tempor incididunt ut labore et dolore magna aliqua. </p>
+					</div>
+				</li>
+			</ul>
+		</div>
+
+	</section>
+
+	<section class="features inner-offset" id="features">
+		<div class="container">
+			<h2 class="secondary-title text-center">Features</h2>
+			<ul class="features__list text-center primary-top-offset">
+				<li class="features__item">
+					<div class="features__item-inner">
+						<div class="features__image-wrap">
+							<div class="features__image">
+								<img src="/images/features_img_01.jpg" alt="image description">
+							</div>
+						</div>
+						<div class="features__item-text">
+							<h3 class="secondary-top-offset third-title">Title1</h3>
+							<p class="third-top-offset">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+								eiusmod
+								tempor incididunt ut labore et dolore magna aliqua.
+							</p>
+						</div>
+					</div>
+				</li>
+				<li class="features__item">
+					<div class="features__item-inner">
+						<div class="features__image-wrap">
+						<div class="features__image">
+							<img src="/images/features_img_02.jpg" alt="image description">
+						</div>
+						</div>
+						<div class="secondary-top-offset">
+							<h3 class="features__item-title third-title">Title1</h3>
+							<p class="third-top-offset">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+								eiusmod
+								tempor incididunt ut labore et dolore magna aliqua.
+							</p>
+						</div>
+					</div>
+				</li>
+				<li class="features__item">
+					<div class="features__item-inner">
+						<div class="features__image-wrap">
+						<div class="features__image">
+							<img src="/images/features_img_03.jpg" alt="image description">
+						</div>
+						</div>
+						<div class="secondary-top-offset">
+							<h3 class="features__item-title third-title">Title1</h3>
+							<p class="third-top-offset">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+								eiusmod
+								tempor incididunt ut labore et dolore magna aliqua.
+							</p>
+						</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</section>
+
+	<section class="info mask inner-offset" id="info" style="background-image: url(/images/information_image.jpg)">
+		<div class="container">
+
+			<div class="info__inner text-color text-center">
+				<h2 class="primary-title">Welcome to our site</h2>
+				<h3 class="subtitle text-white secondary-top-offset">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+					eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+					exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h3>
+				<button class="btn-accent">Contact Us</button>
+			</div>
+
+		</div>
+	</section>
+
+	<section class="gallery inner-offset" id="gallery">
+
+		<h2 class="text-center secondary-title">Gallery</h2>
+
+		<div class="gallery__slider-wrap primary-top-offset">
+			<div class="swiper-container" id="gallery-slider">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide">
+						<div class="gallery__image">
+							<img src="/images/gallery_img_01.jpg" alt="image description">
+						</div>
+					</div>
+					<div class="swiper-slide">
+						<div class="gallery__image">
+							<img src="/images/gallery_img_02.jpg" alt="image description">
+						</div>
+					</div>
+					<div class="swiper-slide">
+						<div class="gallery__image">
+							<img src="/images/gallery_img_03.jpg" alt="image description">
+						</div>
+					</div>
+					<div class="swiper-slide">
+						<div class="gallery__image">
+							<img src="/images/gallery_img_01.jpg" alt="image description">
+						</div>
+					</div>
+					<div class="swiper-slide">
+						<div class="gallery__image">
+							<img src="/images/gallery_img_02.jpg" alt="image description">
+						</div>
+					</div>
+					<div class="swiper-slide">
+						<div class="gallery__image">
+							<img src="/images/gallery_img_03.jpg" alt="image description">
+						</div>
+					</div>
+
+				</div>
+				<!-- Add Arrows -->
+				<div class="swiper-button-next"></div>
+				<div class="swiper-button-prev"></div>
+			</div>
+			<div class="swiper-pagination"></div>
+		</div>
+
+	</section>
+
+	<section class="some-title inner-offset" id="some-title">
+		<div class="container">
+
+			<h2 class="secondary-title text-center white">Some Title</h2>
+
+			<ul class="some-title__list primary-top-offset">
+				<li class="some-title__item">
+					<div class="some-title__image">
+						<img src="/images/some_title_img_01.jpg" alt="image description">
+					</div>
+					<div class="secondary-top-offset text-color">
+						<h3 class="third-title text-white">Title1</h3>
+						<p class="third-top-offset text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+							eiusmod
+							tempor incididunt ut labore et dolore magna aliqua.
+						</p>
+					</div>
+				</li>
+				<li class="some-title__item">
+					<div class="some-title__image">
+						<img src="/images/some_title_img_02.jpg" alt="image description">
+					</div>
+					<div class="secondary-top-offset text-color">
+						<h3 class="third-title text-white">Title1</h3>
+						<p class="third-top-offset text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+							eiusmod
+							tempor incididunt ut labore et dolore magna aliqua.
+						</p>
+					</div>
+				</li>
+				<li class="some-title__item">
+					<div class="some-title__image">
+						<img src="/images/some_title_img_03.jpg" alt="image description">
+					</div>
+					<div class="secondary-top-offset text-color">
+						<h3 class="third-title text-white">Title1</h3>
+						<p class="third-top-offset text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+							eiusmod
+							tempor incididunt ut labore et dolore magna aliqua.
+						</p>
+					</div>
+				</li>
+			</ul>
+			<button class="btn-accent">Contact Us</button>
+		</div>
+	</section>
+
+	<section class="contact inner-offset" id="contact">
+		<h2 class="secondary-title text-center">Contact us</h2>
+		<div class="container">
+			<div class="contact__wrap primary-top-offset">
+
+				<div class="contact__item-left">
+					<p>If you have any questions or reguerests, pleasr contact us at
+						<a class="contact__item-link" href="mailto:info@loremipsum.com">info@loremipsum.com
+						</a>
+						or fill this form </p>
+					<div class="contact__item-inner">
+						<ul class="contact__social-list secondary-top-offset">
+							<li class="contact__social-item">
+								<a href="#" class="contact__social-link">
+									<svg width="32" height="32" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+										<path
+											d="M22.467 0H9.533C4.276 0 0 4.276 0 9.533v12.934C0 27.724 4.276 32 9.533 32h12.934C27.724 32 32 27.724 32 22.467V9.533C32 4.276 27.724 0 22.467 0zm6.314 22.467a6.314 6.314 0 01-6.314 6.314H9.533a6.314 6.314 0 01-6.314-6.314V9.533a6.314 6.314 0 016.314-6.314h12.934a6.314 6.314 0 016.314 6.314v12.934z"
+											fill="#333"/>
+										<path
+											d="M16 7.742c-4.564 0-8.277 3.713-8.277 8.276 0 4.564 3.713 8.277 8.277 8.277 4.563 0 8.276-3.713 8.276-8.277 0-4.563-3.713-8.276-8.276-8.276zm0 13.334a5.057 5.057 0 110-10.115 5.057 5.057 0 010 10.115zM24.177 9.644a1.983 1.983 0 100-3.966 1.983 1.983 0 000 3.966z"
+											fill="#333"/>
+									</svg>
+								</a>
+							</li>
+							<li class="contact__social-item">
+								<a href="#" class="contact__social-link">
+									<svg width="34" height="32" viewBox="0 0 34 32" xmlns="http://www.w3.org/2000/svg">
+										<path
+											d="M28.581 0H4.451C1.993 0 0 1.93 0 4.312v23.376C0 30.069 1.993 32 4.451 32h11.9l.021-11.435h-3.066a.713.713 0 01-.724-.698l-.015-3.686a.712.712 0 01.724-.704h3.061v-3.562c0-4.133 2.606-6.383 6.412-6.383h3.123c.4 0 .723.313.723.7v3.109c0 .387-.323.7-.723.7l-1.916.002c-2.07 0-2.471.952-2.471 2.35v3.084h4.548c.434 0 .77.367.719.784l-.451 3.686a.716.716 0 01-.719.618H21.52L21.5 32h7.081c2.458 0 4.451-1.93 4.451-4.312V4.312C33.032 1.931 31.04 0 28.581 0z"
+											fill="#333"/>
+									</svg>
+								</a>
+							</li>
+						</ul>
+
+						<div class="map secondary-top-offset">
+							<iframe
+								src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2564.2095306851807!2d36.322804715884004!3d50.00742782706784!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x412709fcb457c77b%3A0x7e21d4d2419841f7!2z0LLRg9C70LjRhtGPINCS0LDRgdC40LvRjyDQodGC0YPRgdCwLCAxLCDQpdCw0YDQutGW0LIsINCl0LDRgNC60ZbQstGB0YzQutCwINC-0LHQu9Cw0YHRgtGMLCA2MTAwMA!5e0!3m2!1sru!2sua!4v1577273902940!5m2!1sru!2sua"
+								style="border:0;">
+
+							</iframe>
+						</div>
+					</div>
+				</div>
+
+				<div class="contact__item-right">
+					<form class="form">
+						<div class="form__group">
+							<input class="input" type="text" id="name">
+							<label class="label" for="name">Name</label>
+						</div>
+						<div class="form__group">
+							<input class="input" type="tel" id="Phone">
+							<label class="label" for="Phone">Phone</label>
+						</div>
+						<div class="form__group">
+							<input class="input" type="email" id="E-mail">
+							<label class="label" for="E-mail">E-mail</label>
+						</div>
+						<div class="form__group">
+							<input class="input" type="text" id="Message">
+							<label class="label" for="Message">Message</label>
+						</div>
+						<div class="form__group">
+							<textarea class="textarea" type="text" id="your"></textarea>
+							<label class="label" for="your"></label>
+						</div>
+						<button class="btn-accent" type="submit">Send letter</button>
+
+					</form>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<%= _.template(require('./parts/footer.html'))() %>
+</div>
+</body>
+</html>

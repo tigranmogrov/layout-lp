@@ -1,0 +1,29 @@
+/*
+	vars
+*/
+
+$fonts: '../fonts/';
+$images: '../images/';
+
+// fonts
+$mainFonts: 'M PLUS 1p', serif;
+
+$breakpoints: (
+  xs: 375px,
+  sm: 768px,
+  md: 1024px,
+);
+
+// wrap
+$container-p: 15px;
+$container-width: 1140px;
+
+// colors
+$white: #fff;
+$dark-gray: #333;
+$accent:#FFC700;
+$dark-light: #4D4D4D;
+
+// transitions
+$transition_dur: .5s;
+$transition_tfn: cubic-bezier(.165,.84,.44,1);
